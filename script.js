@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
             newX = Math.floor(Math.random()*30) * cellSize;
             newY = Math.floor(Math.random()*30) * cellSize;
 
-        }while(snake.some(snakeCell => {snakeCell.x === newX && snakeCell.y === newY}));
+        } while(snake.some(snakeCell => {snakeCell.x === newX && snakeCell.y === newY}));
 
         food = {x: newX, y: newY}
     }
